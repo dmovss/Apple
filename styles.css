@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #1C2526;
     color: #E0E0E0;
     line-height: 1.6;
@@ -37,8 +37,13 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.emoji-logo {
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
     font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .nav-menu ul {
@@ -54,6 +59,7 @@ body {
     color: #E0E0E0;
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     transition: color 0.3s;
 }
 
@@ -97,13 +103,16 @@ body {
 }
 
 .hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 64px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 20px;
+    letter-spacing: 3px;
 }
 
 .hero-content p {
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     color: #A9B1B2;
     margin-bottom: 30px;
@@ -116,6 +125,7 @@ body {
     border: none;
     border-radius: 25px;
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -125,14 +135,20 @@ body {
     box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
 }
 
-.hero-emoji {
+.hero-product {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 200px;
     z-index: 1;
-    opacity: 0.2;
+}
+
+.hero-product .product-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 /* Product Showcase */
@@ -142,10 +158,12 @@ body {
 }
 
 .products h2 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 36px;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 60px;
+    letter-spacing: 2px;
 }
 
 .product-grid {
@@ -167,19 +185,23 @@ body {
     transition: transform 0.3s;
 }
 
-.product-emoji {
-    font-size: 100px;
+.product-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+    color: #FFFFFF;
     display: block;
     margin-bottom: 15px;
-    transition: transform 0.5s;
+    transition: transform 0.5s, color 0.3s;
 }
 
 .product-card h3 {
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
     color: #FFFFFF;
 }
 
 .product-card p {
+    font-family: 'Inter', sans-serif;
     color: #A9B1B2;
 }
 
@@ -187,8 +209,9 @@ body {
     transform: scale(1.03);
 }
 
-.product-card:hover .product-emoji {
+.product-card:hover .product-text {
     transform: scale(1.1);
+    color: #00D4FF;
 }
 
 /* Footer */
@@ -204,6 +227,7 @@ body {
     margin: 0 20px;
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer-links a:hover {
@@ -214,6 +238,7 @@ body {
     margin-top: 20px;
     font-size: 12px;
     color: #A9B1B2;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Responsiveness */
@@ -252,15 +277,15 @@ body {
         font-size: 18px;
     }
 
-    .hero-emoji {
-        font-size: 120px;
+    .hero-product .product-text {
+        font-size: 100px;
     }
 
     .products {
         padding: 60px 20px;
     }
 
-    .product-emoji {
-        font-size: 80px;
+    .product-text {
+        font-size: 60px;
     }
 }

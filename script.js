@@ -29,7 +29,7 @@ gsap.from('.hero-content', {
     delay: 0.5
 });
 
-gsap.from('.hero-emoji', {
+gsap.from('.hero-product .product-text', {
     scale: 0.8,
     opacity: 0,
     duration: 1.5,
@@ -38,7 +38,7 @@ gsap.from('.hero-emoji', {
 });
 
 // Parallax Effect on Hero
-gsap.to('.hero-emoji', {
+gsap.to('.hero-product .product-text', {
     yPercent: 20,
     ease: 'none',
     scrollTrigger: {
@@ -63,9 +63,9 @@ gsap.utils.toArray('.product-card').forEach(card => {
     });
 
     card.addEventListener('click', () => {
-        const emoji = card.querySelector('.product-emoji');
-        gsap.to(emoji, {
-            scale: emoji.style.transform === 'scale(1.2)' ? 1 : 1.2,
+        const text = card.querySelector('.product-text');
+        gsap.to(text, {
+            scale: text.style.transform === 'scale(1.2)' ? 1 : 1.2,
             duration: 0.5,
             ease: 'power2.inOut'
         });
